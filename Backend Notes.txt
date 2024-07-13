@@ -1,0 +1,37 @@
+JavaScript backend:
+        
+Browser/Mobile --------> API ------> Backend ------> Database 
+
+Mainly in the src directory 3 files are there in backend:
+
+index.js -> You can say this is entry point/starting point. Also database is written here. When appliccation starts running we connect our database.
+
+App -> Configurations, cookies 
+
+constants -> enums, DB-name
+
+Directory structure -> 
+DB  -> The actual code connect to database
+
+Models -> If you want to store data. You must have define the structure of database. In models folder database structure are written. It is also called Schema.
+
+Controllers -> What ever methods/functions are written in this folder.
+Routes -> Communication ways are defined here.
+Middlewares
+Utils -> Utility functions. Like sending mails, file uploading functions.
+
+More(Depends on project)
+
+
+Whenever you request somethng in web someone is here to listen that request.
+That some one is express js
+
+/ : Home route
+/login
+/search
+/signup
+
+
+npm run start -> To start the applications 
+
+
