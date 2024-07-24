@@ -35,10 +35,12 @@ const blogInfo = [
     }
 ];
 
+
 // http://localhost:3000/blogs
 app.get('/api/blogs', (req, resp) => {
     resp.send(blogInfo)
 })
+
 
 app.listen(port, () => {
     console.log(`Serve at http://localhost:${port}`);
