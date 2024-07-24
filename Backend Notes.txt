@@ -19,12 +19,11 @@ Controllers -> What ever methods/functions are written in this folder.
 Routes -> Communication ways are defined here.
 Middlewares
 Utils -> Utility functions. Like sending mails, file uploading functions.
-
 More(Depends on project)
-
 
 Whenever you request somethng in web someone is here to listen that request.
 That some one is express js
+
 
 / : Home route
 /login
@@ -32,6 +31,38 @@ That some one is express js
 /signup
 
 
+// Run a backend
 npm run start -> To start the applications 
+npm i dotenv -> To install envirnoment files
+npm install -> To install all node modules
+
+whenever your code to production server. Suppose you declared port 4000. But someone that port may be busy. In that case env file are required and your port not exposed to public.
 
 
+SyntaxError: Cannot use import statement outside a module -> To fix this add "type": "module" in package.json file
+
+
+// Create a react app
+npm create vite@latest . -> To create a react app
+npm install -> To install all node modules
+npm run dev -> To start the react applications
+
+
+
+blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource
+To solve this learn about CORS npm package
+
+Add below code in vite.config.js file -> 
+ server: {
+    proxy: {
+      "/api":"http://localhost:3000"
+    },
+  },
+
+
+  Moon moodler -> Used for data modelling for MongoDB  
+
+  ---------------------------------------------------------------------------------------
+
+ Data modelling: Whenever you give a model name in mongoose, when ever the data goes to mongoDB it converted to plural form and lowercase letters. 
+ 
