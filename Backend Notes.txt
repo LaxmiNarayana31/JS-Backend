@@ -64,5 +64,95 @@ Add below code in vite.config.js file ->
 
   ---------------------------------------------------------------------------------------
 
- Data modelling: Whenever you give a model name in mongoose, when ever the data goes to mongoDB it converted to plural form and lowercase letters. 
- 
+ in JavaScript there is 2 ways to importing files --> common JS and module
+
+ npm i -D nodemon -> Dev dependency
+ npm i -D prettier -> Dev dependency
+
+
+ Whenever try to connect to database always use try-catch or Promises(resolve-reject).
+ When i try to talk with database it takes time. So it is better to use async-await.
+
+
+-------------------------------------------------------------------------------------------
+// HTTP crash course
+HTTP -> Hypertext transfer protocol
+
+URL = Uniform Resource Locator
+URI =  Uniform Resource Indentifier
+URN = Uniform Resource Name 
+
+HTTP Headers:
+metadata: Key-value sent along with request and response
+
+Header types:
+Request headers -> from client
+Response headers -> from server
+Representation headers -> Encoding/Compression
+Payload headers -> data
+
+
+Most common headers:
+Accept: application/json
+User-Agent like postman, any browser request
+Authorization: Bearer <token>
+Content-Type: images, pdf
+Cookies
+Cache-control: data expire time
+
+
+CORS:
+Access-control-allow-Origin
+Access-control-allow-Methods
+Access-control-allow-Headers
+Access-control-allow-Credentials
+
+Security:
+HTTPS -> HTTP + SSL/TLS
+SSL/TLS -> Secure Sockets Layer/Transport Layer Security
+
+
+HTTP Methods: GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS, CONNECT, TRACE
+GET: Retrieve data
+POST: Create data
+PUT: Update data
+DELETE: Delete data
+PATCH: Partially update data
+HEAD: Retrieve metadata
+OPTIONS: Check HTTP method support
+CONNECT: Establish a tunnel to the server
+TRACE: Echo the request back to the client
+
+
+Status codes:
+100 -> Continue
+102 -> Processing
+
+200 -> OK
+201 -> Created
+202 -> Accepted
+203 -> Non-Authoritative Information
+204 -> No Content
+
+307 -> Temporary redirect
+308 -> Permanent redirect
+
+// client-side errors
+400 -> Bad request
+401 -> Unauthorized
+402 -> Payment required
+404 -> Not found 
+
+// server-side errors
+500 -> Internal server error
+504 -> Gateway time out 
+
+
+
+// Routes
+routes declaration
+you can't directly write app.get() -> in that all you write all routes and controllers in a single file
+in this case all routes are write in a separate folder, so it is mandotory to use middlewares -> for that use app.use
+
+what are write in this it act as prefix
+standard practise to write this v1 -> version
