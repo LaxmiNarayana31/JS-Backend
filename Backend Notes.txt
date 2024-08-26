@@ -156,3 +156,5 @@ in this case all routes are write in a separate folder, so it is mandotory to us
 
 what are write in this it act as prefix
 standard practise to write this v1 -> version
+
+access token expire in short duration while refresh token expire in long duration. Generally refresh token saved in database.
