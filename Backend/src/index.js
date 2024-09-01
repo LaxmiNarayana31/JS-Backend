@@ -12,6 +12,7 @@ connectDB()
   .then(() => {
     app.listen(process.env.PORT || 8000, () => {
       console.log(`Server is running at port : ${process.env.PORT}`);
+      console.log(`Swagger UI is available at http://localhost:${process.env.PORT || 8000}/api-docs`);
     });
   })
   .catch((err) => {
