@@ -158,3 +158,5 @@ what are write in this it act as prefix
 standard practise to write this v1 -> version
 
 access token expire in short duration while refresh token expire in long duration. Generally refresh token saved in database.
+
+Mostly aggregation pipelines returns array.
